@@ -24,6 +24,10 @@ public class InstrumentosCuerda extends InstrumentosMusicales {
     public void cogerInstrumentoCuerda(){
         System.out.println("Has cogido el instrumento de cuerda");
     }
+    
+    public void arreglarCuerdas(){
+        System.out.println("Arreglando cuerdas al instrumento");
+    }
 
     public int getNumeroCuerdas() {
         return numeroCuerdas;
