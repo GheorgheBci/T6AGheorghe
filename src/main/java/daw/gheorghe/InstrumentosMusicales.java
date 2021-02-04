@@ -1,35 +1,26 @@
 package daw.gheorghe;
 
 import java.util.Objects;
+
 /**
  *
  * @author Jorge
  */
 public class InstrumentosMusicales {
 
-    private String nombre;
     private String material;
     private int precio;
 
-    public InstrumentosMusicales(String nombre, String material, int precio) {
-        this.nombre = nombre;
+    public InstrumentosMusicales(String material, int precio) {
         this.material = material;
         this.precio = precio;
     }
 
     public InstrumentosMusicales() {
     }
-    
-    public void tocar(){
+
+    public void tocar() {
         System.out.println("tocando el instrumento...");
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
     }
 
     public String getMaterial() {
@@ -51,7 +42,6 @@ public class InstrumentosMusicales {
     @Override
     public int hashCode() {
         int hash = 7;
-        hash = 29 * hash + Objects.hashCode(this.nombre);
         hash = 29 * hash + Objects.hashCode(this.material);
         hash = 29 * hash + this.precio;
         return hash;
@@ -72,9 +62,6 @@ public class InstrumentosMusicales {
         if (this.precio != other.precio) {
             return false;
         }
-        if (!Objects.equals(this.nombre, other.nombre)) {
-            return false;
-        }
         if (!Objects.equals(this.material, other.material)) {
             return false;
         }
@@ -83,7 +70,7 @@ public class InstrumentosMusicales {
 
     @Override
     public String toString() {
-        return "InstrumentosMusicales{" + "nombre=" + nombre + ", material=" + material + ", precio=" + precio + '}';
+        return "InstrumentosMusicales{" + ", material=" + material + ", precio=" + precio + '}';
     }
 
 }
