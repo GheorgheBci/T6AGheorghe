@@ -15,6 +15,11 @@ public class InstrumentosCuerda extends InstrumentosMusicales {
 
     public InstrumentosCuerda() {
     }
+    
+    @Override
+    public void tocar(){
+        System.out.println("tocando el instrumento...");
+    }
 
     public int getNumeroCuerdas() {
         return numeroCuerdas;

@@ -18,6 +18,11 @@ public class Guitarra extends InstrumentosCuerda {
     public Guitarra() {
 
     }
+    
+    @Override
+    public void tocar(){
+        System.out.println("tocando el instrumento...");
+    }
 
     public String getTipoGuitarra() {
         return tipoGuitarra;

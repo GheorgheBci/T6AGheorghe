@@ -16,6 +16,11 @@ public class Violin extends InstrumentosCuerda {
     public Violin() {
 
     }
+    
+    @Override
+    public void tocar(){
+        System.out.println("tocando el instrumento...");
+    }
 
     public double getTamanio() {
         return tamanio;
