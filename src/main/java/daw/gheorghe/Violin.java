@@ -6,31 +6,38 @@ package daw.gheorghe;
  */
 public class Violin extends InstrumentosCuerda {
 
+    // Atributos privados de la clase Violin
     private double tamanio;
 
+    // Constructor parametrizado
     public Violin(double tamanio, int numeroCuerdas, String material, int precio) {
         super(numeroCuerdas, material, precio);
         this.tamanio = tamanio;
     }
 
+    // Constructor por defecto
     public Violin() {
 
     }
-    
+
+    // Método sobreescrito
     @Override
-    public void tocar(){
+    public void tocar() {
         System.out.println("tocando el violin...");
     }
-    
-    public void cogerViolin(){
+
+    // Método propio de la clase
+    public void cogerViolin() {
         System.out.println("Has cogido el violin");
     }
-    
+
+    // Método sobreescrito
     @Override
-    public void arreglarCuerdas(){
+    public void arreglarCuerdas() {
         System.out.println("Arreglando cuerdas al instrumento");
     }
 
+    // Métodos getters y setters
     public double getTamanio() {
         return tamanio;
     }
@@ -39,6 +46,7 @@ public class Violin extends InstrumentosCuerda {
         this.tamanio = tamanio;
     }
 
+    // Método hashCode
     @Override
     public int hashCode() {
         int hash = 3;
@@ -46,6 +54,7 @@ public class Violin extends InstrumentosCuerda {
         return hash;
     }
 
+    // Método equals
     @Override
     public boolean equals(Object obj) {
         if (!super.equals(obj)) {
@@ -60,6 +69,7 @@ public class Violin extends InstrumentosCuerda {
         return true;
     }
 
+    // Método toString
     @Override
     public String toString() {
         return super.toString() + "Violin{" + "tamanio=" + tamanio + '}';

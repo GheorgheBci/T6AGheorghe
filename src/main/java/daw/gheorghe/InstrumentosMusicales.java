@@ -8,21 +8,26 @@ import java.util.Objects;
  */
 public class InstrumentosMusicales {
 
+    // Atributos privados de la clase InstrumentosMusicales
     private String material;
     private int precio;
 
+    // Constructor parametrizado
     public InstrumentosMusicales(String material, int precio) {
         this.material = material;
         this.precio = precio;
     }
 
+    // Constructor por defecto
     public InstrumentosMusicales() {
     }
 
+    // Método polimórfico
     public void tocar() {
         System.out.println("tocando el instrumento...");
     }
 
+    // Métodos getters y setters
     public String getMaterial() {
         return material;
     }
@@ -39,6 +44,7 @@ public class InstrumentosMusicales {
         this.precio = precio;
     }
 
+    // Método hashCode
     @Override
     public int hashCode() {
         int hash = 7;
@@ -47,6 +53,7 @@ public class InstrumentosMusicales {
         return hash;
     }
 
+    // Método equals
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
@@ -68,6 +75,7 @@ public class InstrumentosMusicales {
         return true;
     }
 
+    // Método toString
     @Override
     public String toString() {
         return "InstrumentosMusicales{" + ", material=" + material + ", precio=" + precio + '}';

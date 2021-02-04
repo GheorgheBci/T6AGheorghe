@@ -8,31 +8,38 @@ import java.util.Objects;
  */
 public class Guitarra extends InstrumentosCuerda {
 
+    // Atributos privados de la clase Guitarra
     private String tipoGuitarra;
 
+    // Constructor parametrizado
     public Guitarra(String tipoGuitarra, int numeroCuerdas, String material, int precio) {
         super(numeroCuerdas, material, precio);
         this.tipoGuitarra = tipoGuitarra;
     }
 
+    // Constructor por defecto
     public Guitarra() {
 
     }
-    
+
+    // Método sobreescrito
     @Override
-    public void tocar(){
+    public void tocar() {
         System.out.println("tocando la guitarra...");
     }
-    
-    public void cogerGuitarra(){
+
+    // Método propio de la clase
+    public void cogerGuitarra() {
         System.out.println("Has cogido la guitarra");
     }
-    
+
+    // Método sobreescrito
     @Override
-    public void arreglarCuerdas(){
+    public void arreglarCuerdas() {
         System.out.println("Arreglando cuerdas al instrumento");
     }
 
+    // Métodos getters y setters
     public String getTipoGuitarra() {
         return tipoGuitarra;
     }
@@ -41,6 +48,7 @@ public class Guitarra extends InstrumentosCuerda {
         this.tipoGuitarra = tipoGuitarra;
     }
 
+    // Método hashCode
     @Override
     public int hashCode() {
         int hash = 5;
@@ -48,6 +56,7 @@ public class Guitarra extends InstrumentosCuerda {
         return hash;
     }
 
+    // Método equals
     @Override
     public boolean equals(Object obj) {
         if (!super.equals(obj)) {
@@ -62,6 +71,7 @@ public class Guitarra extends InstrumentosCuerda {
         return true;
     }
 
+    // Método toString
     @Override
     public String toString() {
         return super.toString() + "Guitarra{" + "tipoGuitarra=" + tipoGuitarra + '}';

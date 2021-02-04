@@ -6,29 +6,36 @@ package daw.gheorghe;
  */
 public class InstrumentosCuerda extends InstrumentosMusicales {
 
+    // Atributos privados de la clase InstrumentosCuerda
     private int numeroCuerdas;
 
+    // Constructor parametrizado
     public InstrumentosCuerda(int numeroCuerdas, String material, int precio) {
         super(material, precio);
         this.numeroCuerdas = numeroCuerdas;
     }
 
+    // Constructor por defecto
     public InstrumentosCuerda() {
     }
-    
+
+    // Método sobreescrito
     @Override
-    public void tocar(){
+    public void tocar() {
         System.out.println("tocando el instrumento de cuerda...");
     }
-    
-    public void cogerInstrumentoCuerda(){
+
+    // Método propio de la clase
+    public void cogerInstrumentoCuerda() {
         System.out.println("Has cogido el instrumento de cuerda");
     }
-    
-    public void arreglarCuerdas(){
+
+    // Método polimórfico
+    public void arreglarCuerdas() {
         System.out.println("Arreglando cuerdas al instrumento");
     }
 
+    // Métodos getters y setters
     public int getNumeroCuerdas() {
         return numeroCuerdas;
     }
@@ -37,6 +44,7 @@ public class InstrumentosCuerda extends InstrumentosMusicales {
         this.numeroCuerdas = numeroCuerdas;
     }
 
+    // Método hashCode
     @Override
     public int hashCode() {
         int hash = 3;
@@ -44,6 +52,7 @@ public class InstrumentosCuerda extends InstrumentosMusicales {
         return hash;
     }
 
+    // Método equals
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
@@ -62,6 +71,7 @@ public class InstrumentosCuerda extends InstrumentosMusicales {
         return true;
     }
 
+    // Método toString
     @Override
     public String toString() {
         return super.toString() + "InstrumentosCuerda{" + "numeroCuerdas=" + numeroCuerdas + '}';
