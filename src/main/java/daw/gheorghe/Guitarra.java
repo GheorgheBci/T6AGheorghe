@@ -23,6 +23,10 @@ public class Guitarra extends InstrumentosCuerda {
     public void tocar(){
         System.out.println("tocando el instrumento...");
     }
+    
+    public void cogerGuitarra(){
+        System.out.println("Has cogido la guitarra");
+    }
 
     public String getTipoGuitarra() {
         return tipoGuitarra;
