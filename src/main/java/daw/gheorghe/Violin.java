@@ -19,11 +19,16 @@ public class Violin extends InstrumentosCuerda {
     
     @Override
     public void tocar(){
-        System.out.println("tocando el instrumento...");
+        System.out.println("tocando el violin...");
     }
     
     public void cogerViolin(){
         System.out.println("Has cogido el violin");
+    }
+    
+    @Override
+    public void arreglarCuerdas(){
+        System.out.println("Arreglando cuerdas al instrumento");
     }
 
     public double getTamanio() {

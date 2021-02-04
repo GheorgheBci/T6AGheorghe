@@ -18,7 +18,7 @@ public class InstrumentosCuerda extends InstrumentosMusicales {
     
     @Override
     public void tocar(){
-        System.out.println("tocando el instrumento...");
+        System.out.println("tocando el instrumento de cuerda...");
     }
     
     public void cogerInstrumentoCuerda(){
