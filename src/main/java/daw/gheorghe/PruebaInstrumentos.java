@@ -18,19 +18,21 @@ public class PruebaInstrumentos {
         listaInstrumentos.add(new Guitarra("española", 5, "madera", 250));
         listaInstrumentos.add(new Violin(60.50, 6, "madera", 150));
         listaInstrumentos.add(new Violin(15.50, 4, "madera", 80));
-        
+
         for (InstrumentosMusicales aux : listaInstrumentos) {
             if (aux instanceof InstrumentosCuerda) {
                 ((InstrumentosCuerda) aux).cogerInstrumentoCuerda();
             }
-            
+
             if (aux instanceof Guitarra) {
                 ((Guitarra) aux).cogerGuitarra();
             }
-            
+
             if (aux instanceof Violin) {
                 ((Violin) aux).cogerViolin();
             }
+
+            aux.tocar();
         }
     }
 }
