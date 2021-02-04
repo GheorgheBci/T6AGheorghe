@@ -8,8 +8,8 @@ public class Violin extends InstrumentosCuerda {
 
     private double tamanio;
 
-    public Violin(double tamanio, int numeroCuerdas, String nombre, String material, int precio) {
-        super(numeroCuerdas, nombre, material, precio);
+    public Violin(double tamanio, int numeroCuerdas, String material, int precio) {
+        super(numeroCuerdas, material, precio);
         this.tamanio = tamanio;
     }
 

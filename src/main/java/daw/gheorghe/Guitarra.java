@@ -10,8 +10,8 @@ public class Guitarra extends InstrumentosCuerda {
 
     private String tipoGuitarra;
 
-    public Guitarra(String tipoGuitarra, int numeroCuerdas, String nombre, String material, int precio) {
-        super(numeroCuerdas, nombre, material, precio);
+    public Guitarra(String tipoGuitarra, int numeroCuerdas, String material, int precio) {
+        super(numeroCuerdas, material, precio);
         this.tipoGuitarra = tipoGuitarra;
     }
 
