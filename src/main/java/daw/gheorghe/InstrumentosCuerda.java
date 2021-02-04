@@ -20,6 +20,10 @@ public class InstrumentosCuerda extends InstrumentosMusicales {
     public void tocar(){
         System.out.println("tocando el instrumento...");
     }
+    
+    public void cogerInstrumentoCuerda(){
+        System.out.println("Has cogido el instrumento de cuerda");
+    }
 
     public int getNumeroCuerdas() {
         return numeroCuerdas;
