@@ -19,6 +19,10 @@ public class InstrumentosMusicales {
 
     public InstrumentosMusicales() {
     }
+    
+    public void tocar(){
+        System.out.println("tocando el instrumento...");
+    }
 
     public String getNombre() {
         return nombre;
